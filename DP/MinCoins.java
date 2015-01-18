@@ -1,8 +1,8 @@
 package DP;
 
 //DP solution for MinCoins problem
-//Given a number and denominations, returns min number of coins required to make a change
-//Works for non US currency aswell
+//Given a number and denominations, returns minimum number of coins required to make a change
+//Works for non US currency as well
 import java.util.*;
 public class MinCoins {
 
