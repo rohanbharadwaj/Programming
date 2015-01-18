@@ -1,20 +1,20 @@
-package trees;
-public class BinaryTree {
+package searching;
+
+class Node {
+	Node left;
+	Node right;
+	int data;
+
+	Node(int d) {
+		left = null;
+		right = null;
+		data = d;
+	}
+}
+public class BST {
 	public Node root;
 
-	public static class Node {
-		Node left;
-		Node right;
-		int data;
-
-		Node(int d) {
-			left = null;
-			right = null;
-			data = d;
-		}
-	}
-
-	public BinaryTree() {
+	public BST() {
 		root = null;
 	}
 
@@ -156,26 +156,5 @@ public class BinaryTree {
 	private void bfs(Node node)
 	{
 		
-	}
-
-	public static void main(String args[]) {
-		BinaryTree bt = new BinaryTree();
-		bt.insert(3);
-		bt.insert(4);
-		bt.insert(1);
-		bt.insert(10);
-		System.out.println(bt.lookup(4));
-		System.out.println(bt.lookup(53));
-		bt.insert(53);
-		System.out.println(bt.lookup(53));
-		System.out.println(bt.maxDepth());
-		System.out.println(bt.isBalanced());
-		System.out.println(bt.isBalanced1());
-		System.out.print("Inorder : ");
-		bt.inorder();
-		System.out.print("\nPreorder : ");
-		bt.preorder();
-		System.out.print("\nPostorder : ");
-		bt.postorder();
 	}
 }
