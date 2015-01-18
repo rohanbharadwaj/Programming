@@ -1,4 +1,4 @@
-package BinarySearch;
+package binarysearch;
 /*
  * This Program is used to search for a key in a sorted array which is 
  * rotated. It works fine even if there are duplicates.

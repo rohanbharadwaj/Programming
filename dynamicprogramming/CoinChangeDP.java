@@ -1,4 +1,4 @@
-package DP;
+package dynamicprogramming;
 
 //Time complexity : Time Complexity: O(mn)
 //Dynamic Programming, Top Down using memoization 

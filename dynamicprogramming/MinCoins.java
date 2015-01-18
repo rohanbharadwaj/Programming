@@ -1,4 +1,4 @@
-package DP;
+package dynamicprogramming;
 
 //DP solution for MinCoins problem
 //Given a number and denominations, returns minimum number of coins required to make a change

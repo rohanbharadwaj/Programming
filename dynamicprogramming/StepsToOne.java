@@ -1,4 +1,4 @@
-package DP;
+package dynamicprogramming;
 
 /*
  * Problem : Minimum Steps to One

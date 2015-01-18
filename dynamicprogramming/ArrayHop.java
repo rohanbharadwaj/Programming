@@ -1,4 +1,4 @@
-package DP;
+package dynamicprogramming;
 
 import java.util.*;
 public class ArrayHop{

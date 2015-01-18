@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedList;
 class TestLinkedList {
 	private Node head;
 
