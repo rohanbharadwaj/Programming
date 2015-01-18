@@ -36,16 +36,16 @@ public class QuickSort extends Sort {
 	// pivot and all elements after pivot are greater than
 	// pivot.
 	private static int partition(int[] a, int lo, int hi) {
-		int pval = a[hi]; // Right most is selected as pivot can be anything.
-		int wall = lo; // This is the partition index.
+		int pivot = a[hi]; // Right most is selected as pivot can be anything.
+		int partitionIndex = lo; // This is the partition index.
 		for (int i = lo; i <= hi - 1; i++) {
-			if (a[i] <= pval) { // Push all elements lesser than pivot to left of wall
-				swap(a, i, wall);
-				wall++;
+			if (a[i] <= pivot) { // Push all elements lesser than pivot to left of partitionIndex
+				swap(a, i, partitionIndex);
+				partitionIndex++;
 			}
 		}
-		swap(a, wall, hi);
-		return wall;
+		swap(a, partitionIndex, hi);
+		return partitionIndex; //Return partition index
 	}
 
 }
