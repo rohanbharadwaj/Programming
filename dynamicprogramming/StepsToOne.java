@@ -12,7 +12,7 @@ package dynamicprogramming;
 import java.util.*;
 class MinStepsMemo
 {
-	static int[] memo;
+	static int[] memo; // Top Down a Static array. Filled with Infinity
 	static int n;
 	MinStepsMemo(int num)
 	{
@@ -22,7 +22,7 @@ class MinStepsMemo
 	public static int getMinStepsMemo(int n)
 	{
 		if(n==1) return 0;
-		if(memo[n]!=-1) return memo[n];
+		if(memo[n]!=-1) return memo[n]; // Already calculated
 		int r = 1 + getMinStepsMemo(n-1);
 		if(n%2==0) r = Math.min(r,1+getMinStepsMemo(n/2));
 		if(n%3==0) r =  Math.min(r,1+getMinStepsMemo(n/3));
@@ -35,7 +35,7 @@ class MinStepsDP
 	
 	public static int getMinStepsDP(int n)
 	{
-		int[] dp = new int[n+1];
+		int[] dp = new int[n+1]; // Bottom up. Empty array
 		dp[1] = 0;
 		for(int i=2;i<=n;i++)
 		{

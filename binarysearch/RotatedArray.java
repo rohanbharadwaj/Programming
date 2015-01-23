@@ -57,7 +57,7 @@ public class RotatedArray {
 	public static void main(String args[]) {
 		int[] arr = { 2, 2, 2, 2, 2, 3, 1 };
 		int high = arr.length;
-		int res = search(arr, 3, 0, high - 1);
+		int res = search(arr, 2, 0, high - 1);
 		System.out.println(res);
 	}
 }

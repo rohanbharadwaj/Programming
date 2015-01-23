@@ -1,7 +1,10 @@
 package dynamicprogramming;
-
+// Problem : 
+//Find all combinations of coins when given some dollar value
 //Time complexity : Time Complexity: O(mn)
-//Dynamic Programming, Top Down using memoization 
+//Dynamic Programming, Bottom up DP.
+//Ref : http://stackoverflow.com/questions/1106929/find-all-combinations-of-coins-when-given-some-dollar-value
+
 public class CoinChangeDP
 {
 	public static int getChange(int n,int[] S)
@@ -28,6 +31,12 @@ public class CoinChangeDP
 	            table[i][j] = x + y;
 	        }
 	    }
+//	    for(int i=0;i<table.length;i++)
+//	    {
+//	    	for(int j=0;j<table[0].length;j++)
+//	    		System.out.print(table[i][j]+" ");
+//	    	System.out.println("\n");
+//	    }
 	    return table[n][m-1];
 
 	}
@@ -35,8 +44,8 @@ public class CoinChangeDP
 
 	public static void main(String args[])
 	{
-		int[] s = {1,5,10,25,50};
-		int n = 6;
+		int[] s = {1,5,10,25};
+		int n = 78;
 		int res = getChange(n,s);
 		System.out.println(res);
 

@@ -15,22 +15,26 @@ def change_recursive( n, m ):
     if m < 0 and n >= 1: #m < 0 for zero indexed programming languages
         return 0          #no solution -- we have money, but no change available
  
-    return count( n, m - 1 ) + count( n - S[m], m )
+    return change_recursive( n, m - 1 ) + change_recursive( n - S[m], m )
 
 
-def change_recursive_memo( n, m ):
-	"""
-	Memoized version of coin change.
-
-	Time complexity is O(mn)
-	"""
-    table[n][m] 
+# def change_recursive_memo( n, m ):
+# 	"""
+# 	Memoized version of coin change.
+# 
+# 	Time complexity is O(mn)
+# 	"""
+# table[n][m] 
+# def change_dp(n,m):
+#     table={}
+#     table[0]=1
+#     for 
 
 
 
 
 def main():
-   print count(6,4);
+   print change_recursive(3,4);
 
 if __name__=='__main__':
 	main()      

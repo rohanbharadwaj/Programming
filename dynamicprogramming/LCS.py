@@ -12,6 +12,7 @@ def lcs_len(x, y): #recursive not efficient
     else:
         return max(lcs_len(xx, y), lcs_len(x, yy))
 
+# Time Complexity is O(mn)
 def lcs(x, y): # DP solution with Memoization
     n = len(x)
     m = len(y)
