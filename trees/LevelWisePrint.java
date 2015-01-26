@@ -11,8 +11,8 @@ public class LevelWisePrint {
 		while(!queue.isEmpty()){
 			Node node = queue.poll();
 			System.out.println(node.data);
-			if(node.left!=null) queue.add(node.left);
-			if(node.right!=null) queue.add(node.right);
+			if(node.left!=null) queue.offer(node.left);
+			if(node.right!=null) queue.offer(node.right);
 		}
 	}
 }
